@@ -1,0 +1,13 @@
+appName: analytics-service
+appPort: 8000
+replicas: 2
+serviceType: ClusterIP
+config_values:
+  DATABASE_URL: "postgresql+asyncpg://analytics_svc_user:localdev123@wmp-dev.ca7so8yw8r9s.us-east-1.rds.amazonaws.com:5432/wmp"
+  DB_SCHEMA: "analytics_schema"
+  LOG_LEVEL: "INFO"
+
+  
+
+
+
